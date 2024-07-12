@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anime Site</title>
+	<link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+  	<h2>
+  		<a href="/"><img src="/images/logo.jpg" alt="logo" width="250" height="90"></a>
+  	</h2>
+  	<div class="top">
+            <a href="/newAnime">New Episode</a>
+            <% if(!user){ %>
+            <a href="/users/login">Login</a>
+            <a href="/users/new">Signup</a>
+            <% } else { %>
+            <a href="/users/profile">Profile</a>
+            <a href="/users/logout">Logout</a>
+            <% } %>
+    </div>
+
+    <div class="animes">
+    	<p>________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <a href="/animeTrades">Anime Series</a>
+    </div>
+  </header>
+  <% if(errorMessages.length > 0) {%>
+    <% errorMessages.forEach(message=>{%>
+        <div class='error'>
+            <%=message%>
+        </div>
+    <%});%>
+<%}%>
+
+<% if(successMessages.length > 0) {%>
+    <% successMessages.forEach(message=>{%>
+        <div class='success'>
+            <%=message%>
+        </div>
+    <%});%>
+<%}%>

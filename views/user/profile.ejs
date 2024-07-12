@@ -1,0 +1,157 @@
+<%- include('../partials/header.ejs')%>
+    <div class="content">
+        <div class="center-container mb-100">
+            <div class="event-heading">
+                <h3 class="dis-in-bl">
+                    <%=user.firstName%>'s Trades
+                </h3>
+            </div>
+            <% if(animes.length){ %>
+
+                <table id="#table">
+                    <tr>
+                        <th>Anime Name</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    <% animes.forEach(anime=> { %>
+                        <tr>
+                            <td><a href='/animetrade/<%=anime._id%>'>
+                                    <%= anime.title %>
+                                </a>
+                            </td>
+                            <td>
+                                <%= anime.category %>
+                            </td>
+                            <td>
+                                <%= anime.status %>
+                            </td>
+                            <td>
+                                <form style="float: left;">
+                                    <button class="button update-btn" type="submit" formmethod="GET"
+                                        formaction="/<%= anime._id%>/edit">Edit</button>
+                                    <button class="button delete-btn" type="submit" formmethod="POST"
+                                        formaction="/<%= anime._id%>?_method=DELETE">Delete</button>
+
+                                    <% if(anime.status==='Pending' && anime.offerItemId){%>
+                                        <button type="submit" class="button" formmethod="GET"
+                                            formaction="/trade/offer/manage/<%=anime._id%>">
+                                            Manage Offer
+                                        </button>
+                                        <% }%>
+                                </form>
+                            </td>
+                        </tr>
+                        <% }); %>
+                </table>
+                <% } else { %>
+                    <p style="margin: 20px auto;width: 95%;">There are no phonemodels to display.</p>
+                    <% } %>
+        </div>
+
+
+
+
+        <% if(watchlist.length){ %>
+            <div class="event-heading">
+                <h3 class="dis-in-bl">
+                    <%=user.firstName%>'s Trades
+                </h3>
+            </div>
+
+            <table id="#table">
+                <tr>
+                    <th>Anime Name</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <% watchlist.forEach(anime=> { %>
+                    <tr>
+                        <td><a href='/animetrade/<%=anime._id%>'>
+                                <%= anime.title %>
+                            </a>
+                        </td>
+                        <td>
+                            <%= anime.category %>
+                        </td>
+                        <td>
+                            <%= anime.status %>
+                        </td>
+                        <td>
+
+                            <form style="float: left;">
+                                <% if(anime.status==='Available' ){%>
+                                    <button class="button update-btn" type="submit" formmethod="GET"
+                                        formaction="/trade/offer/<%=anime._id%>">Trade</button>
+                                    <% }%>
+                                        <button class="button delete-btn" type="submit" formmethod="POST"
+                                            formaction="/trade/unwatch/<%=anime._id%>?_method=PUT">Unwatch</button>
+                            </form>
+
+                        </td>
+                    </tr>
+                    <% }); %>
+            </table>
+            <% } %>
+
+
+
+
+                <% if(offers.length){ %>
+                    <div class="event-heading">
+                        <h3 class="dis-in-bl">
+                            <%=user.firstName%>'s Trades
+                        </h3>
+                    </div>
+
+                    <table id="#table">
+                        <tr>
+                            <th>Anime Name</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <% offers.forEach(anime=> { %>
+                            <tr>
+                                <td><a href='/animetrade/<%=anime._id%>'>
+                                        <%= anime.title %>
+                                    </a>
+                                </td>
+                                <td>
+                                    <%= anime.category %>
+                                </td>
+                                <td>
+                                    <%= anime.status %>
+                                </td>
+                                <td>
+                                    <% if(anime.offerItemId){%>
+
+                                        <form style="float: left;">
+                                            <button class="button delete-btn" type="submit" formmethod="POST"
+                                                formaction="/trade/offer/reject/<%=anime._id%>/<%=anime.offerItemId.id%>">Cancel
+                                                Offer</button>
+                                        </form>
+                                        <%}%>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </table>
+                    <% } %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

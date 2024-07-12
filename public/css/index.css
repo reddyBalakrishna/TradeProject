@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-image: url(gif.gif);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 13vh;
+}
+
+
+header h2 {
+    position: absolute;
+    margin-top: 1px;
+    left: 5;
+}
+
+header,
+footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.top {
+    position: absolute;
+    width: 100%;
+}
+
+.top a {
+    position: relative;
+    left: 65%;
+    top: 35px;
+    text-decoration: none;
+    margin-right: 35px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.animes {
+	position: absolute;
+	margin-top: 5%;
+}
+
+.animes a {
+	text-decoration: none;
+	color: orange;
+	font-size: 25px;
+	font-family: cursive;
+}
+
+footer {
+    height: 9vh;
+    bottom: 0;
+    margin-top: 15%;
+}
+
+footer a {
+    position: relative;
+    left: 20px;
+    top: 30%;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+.media i {
+    position: relative;
+    left: 78%;
+    font-size:25px;
+    margin-right: 15px;
+    color: white;
+}
+
+.middle {
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 50px;
+    overflow: hidden;
+    color: white;
+    font-family: cursive;
+}
+
+.images {
+	position: absolute;
+    margin-top: 15%;
+    margin-left: 50px;
+    margin-right: 56px;
+}
+
+.border {
+	border-radius: 20px;
+}
+
+
+body{
+	background-image: url(gif.gif);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 13vh;
+}
+
+
+header h2 {
+    position: absolute;
+    margin-top: 1px;
+    left: 5;
+}
+
+header,
+footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.top {
+    position: absolute;
+    width: 100%;
+}
+
+.top a {
+    position: relative;
+    left: 65%;
+    top: 35px;
+    text-decoration: none;
+    margin-right: 35px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.animes {
+	position: absolute;
+	margin-top: 5%;
+}
+
+.animes a {
+    text-decoration: none;
+    color: orange;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+footer {
+    height: 9vh;
+    bottom: 0;
+    margin-top: 15%;
+}
+
+footer a {
+    position: relative;
+    left: 20px;
+    top: 30%;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+#edit{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 20%;
+    overflow: hidden;
+    color: orange;
+    font-size: 25px;
+    font-family: cursive;  
+}
+
+#newtrade{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 7%;
+    overflow: hidden;
+    color: orange;
+    font-size: 25px;
+    font-family: cursive;  
+}
+form {
+    overflow: hidden;
+    color: orange;
+    font-size: 25px;
+    font-family: cursive;
+}
+#userforms{
+    position: absolute;
+    margin-left: 40%;
+    overflow: hidden;
+    color: orange;
+    font-size: 25px;
+    font-family: cursive;
+    margin-top: 10%;
+}
+
+.media i {
+    position: relative;
+    left: 78%;
+    font-size:25px;
+    margin-right: 15px;
+    color: white;
+}
+
+.middle {
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 50px;
+    overflow: hidden;
+    color: white;
+    font-family: cursive;
+}
+
+.images {
+	position: absolute;
+    margin-top: 15%;
+    margin-left: 50px;
+    margin-right: 56px;
+}
+
+.border {
+	border-radius: 20px;
+}
+
+/* .button {
+    background-color: orange;
+            color: white;
+            padding: 12px 10px;
+            width: 335px;
+            cursor: pointer;
+            text-align: center;
+} */
+
+.box{
+            width: 310px;
+            padding: 10px;
+            outline: none;
+        }
+
+
+
+        
+body{
+	background-color: gray;
+}
+
+header {
+    height: 13vh;
+}
+
+
+header h2 {
+    position: absolute;
+    margin-top: 1px;
+    left: 5;
+}
+
+header,
+footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.top {
+    position: absolute;
+    width: 100%;
+}
+
+.top a {
+    position: relative;
+    left: 65%;
+    top: 35px;
+    text-decoration: none;
+    margin-right: 35px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.animes {
+	position: absolute;
+	margin-top: 5%;
+}
+
+.animes a {
+	text-decoration: none;
+	color: orange;
+	font-size: 25px;
+	font-family: cursive;
+}
+
+.animes h1 {
+    font-family: cursive;
+    color: orange;
+    text-align: center;
+}
+
+footer {
+    height: 9vh;
+    bottom: 0;
+    margin-top: 15%;
+}
+
+footer a {
+    position: relative;
+    left: 20px;
+    top: 30%;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+.media i {
+    position: relative;
+    left: 78%;
+    font-size:25px;
+    margin-right: 15px;
+    color: white;
+}
+
+.middle {
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 50px;
+    overflow: hidden;
+    color: white;
+    font-family: cursive;
+}
+
+.images {
+	position: absolute;
+    margin-top: 15%;
+    margin-left: 50px;
+    margin-right: 56px;
+}
+
+.border {
+	border-radius: 20px;
+}
+
+.errorcontent{
+    padding-top: 120px;
+}
+
+body{
+	background-color: gray;
+}
+
+
+header {
+    height: 13vh;
+}
+
+
+header h2 {
+    position: absolute;
+    margin-top: 1px;
+    left: 5;
+}
+
+header,
+footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+.event-heading{
+padding-top: 120px;
+}
+
+
+
+
+.top {
+    position: absolute;
+    width: 100%;
+}
+
+.top a {
+    position: relative;
+    left: 65%;
+    top: 35px;
+    text-decoration: none;
+    margin-right: 35px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.animes {
+	position: absolute;
+	margin-top: 5%;
+}
+
+
+footer {
+    height: 9vh;
+    bottom: 0;
+    margin-top: 25%;
+}
+
+footer a {
+    position: relative;
+    left: 20px;
+    top: 30%;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+.media i {
+    position: relative;
+    left: 78%;
+    font-size:25px;
+    margin-right: 15px;
+    color: white;
+}
+
+.middle {
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 50px;
+    overflow: hidden;
+    color: white;
+    font-family: cursive;
+}
+
+.images {
+	position: absolute;
+    margin-top: 15%;
+    margin-left: 50px;
+    margin-right: 56px;
+    font-family: cursive;
+}
+
+.border {
+	border-radius: 20px;
+}
+
+.success {
+    background: rgba(108, 192, 112, 0.7);
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    padding-top: 120px;
+    margin-left: 8%;
+  }
+  
+  .error {
+    background: rgba(225, 29, 29, 0.7);
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    padding-top: 120px;
+    margin-left: 8%;
+  }
+  #table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    background-color: white;
+    margin: 20px auto;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }

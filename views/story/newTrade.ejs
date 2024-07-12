@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+
+  <form action="/" method="POST" id="newtrade">
+        <label>Anime Type:</label><br>
+        <input type="text" class="box" name="category" placeholder="Manga or anime" required><br>
+        <label>Anime Name: </label><br>
+        <input type="text" class="box" name="title" placeholder="Anime Name" required><br>
+        <label>Anime Image URL: </label><br>
+        <input type="text" class="box" name="imageurl" placeholder="Anime Image URL" required><br>
+        <label>Specifications if any: </label><br>
+        <textarea class="box" name="content" rows="5" cols="33" placeholder="Description of the Anime" required minlength="10"></textarea><br><br>
+        <button class="button">New Episode</button>
+    </form>
+
+    <%- include('../partials/footer.ejs') %>

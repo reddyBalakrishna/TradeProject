@@ -1,0 +1,45 @@
+<%- include('../partials/header.ejs')%>
+    <div class="content">
+        <div class="center-container mb-100">
+            <div class="event-heading">
+                <h3 class="dis-in-bl">
+                    <%=user.firstName%>'s Trades
+                </h3>
+            </div>
+            <% if(animeDetails.length){ %>
+                <% console.log("id----",id)%>
+
+                <form action="/trade/offer/<%=id%>" method="POST">
+                    <table id="#table">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Anime </th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                        <% animeDetails.forEach(anime=> { %>
+                            <tr>
+                                <td>
+                                    <input type="radio" name="tradeItem" value="<%=anime._id%>">
+                                </td>
+                                <td><a id="profilelinks" href='/animetrade/<%=anime._id%>'>
+                                    <%= anime.title %>
+                                </a>
+                                </td>
+                                <td>
+                                    <%= anime.category %>
+                                </td>
+                                <td>
+                                    <%= anime.status %>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </table>
+                    <button class="button update-btn" type="submit">Trade</button>
+                </form>
+                    <% } else { %>
+                        <p style="margin: 20px auto;width: 95%;">There are no Animes available to Trade</p>
+                        <% } %>
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

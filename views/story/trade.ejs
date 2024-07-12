@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs') %>
+
+
+  <div class="images">
+    <img src="<%= anime.imageurl%>" width="200" height="150"/>
+    <h4><%= anime.title%></h4>
+    <div><%= anime.content%></div>
+    <% if(user == anime.author._id) { %>
+    <form>
+      <button type="submit" formmethod="GET" formaction="/<%= anime._id%>/edit">Edit</button>
+      <button type="submit" formmethod="POST" formaction="/<%= anime._id%>?_method=DELETE">Delete</button>
+
+  </form>
+  <% } else {%>
+    <form>
+      <%  if(anime.status==='Available'){%>
+      <button type="submit" formmethod="GET" formaction="/trade/offer/<%=anime._id%>">Trade</button>
+      <%} 
+      if(canWatch){%>
+      <button type="submit" formmethod="POST"
+        formaction="/trade/watch/<%=anime._id%>?_method=PUT">Watch</button>
+      <%}else{%>
+        <button type="submit" formmethod="POST"
+          formaction="/trade/unwatch/<%=anime._id%>?_method=PUT">Unwatch</button>
+        <%}%>
+    </form>
+    <% } %>
+  </div>
+
+  <%- include('../partials/footer.ejs') %>
